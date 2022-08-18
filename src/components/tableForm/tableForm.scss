@@ -1,0 +1,44 @@
+.table-form-section {
+  width: 50%;
+  margin: 1em auto;
+
+  .form-labels {
+    display: flex;
+    justify-content: space-around;
+  }
+  .form-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+
+    .input {
+      padding: 0.7em;
+      border-radius: 5px;
+      outline: none;
+      border: 1px solid #aaa;
+    }
+
+    select {
+      padding: 0.7em;
+      border-radius: 5px;
+    }
+    text-align: center;
+  }
+  .action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+
+    .submit {
+      padding: 0.7em;
+      background-color: #047dff;
+      border: 1px solid #047dff;
+      border-radius: 5px;
+      color: #fff;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
