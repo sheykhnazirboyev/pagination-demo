@@ -25,4 +25,18 @@
     padding: 1em;
     text-align: center;
   }
+
+  .edit {
+    border: none;
+    outline: none;
+    color: #047dff;
+    background-color: transparent;
+  }
+
+  .delete {
+    border: none;
+    outline: none;
+    color: red;
+    background-color: transparent;
+  }
 }
