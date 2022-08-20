@@ -26,7 +26,6 @@ function reducer(state = intialState, action) {
       const start = state.pageIndex * state.pageSize;
       const end = start + state.pageSize;
       const currentPage = items.slice(start, end);
-      console.log(start, end, state.pageIndex, state.pageSize);
       return {
         ...state,
         items: items,
