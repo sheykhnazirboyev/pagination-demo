@@ -1,7 +1,6 @@
 import "./table.scss";
 
 function Table({ data, changeEditId, handleDelete }) {
-  console.log(data);
   const renerBody = data.map((item, i) => (
     <tr key={item.id}>
       <td>{i + 1}</td>
