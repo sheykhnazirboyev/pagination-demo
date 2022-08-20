@@ -27,8 +27,6 @@ function App() {
   const currentPage = useSelector(selectCurrentPage);
   const [editId, setEditId] = useState(null);
 
-  console.log(currentPage);
-
   const changeEditId = useCallback((id) => {
     setEditId(id);
   }, []);
