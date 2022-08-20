@@ -19,10 +19,15 @@ export const eitItem = (values, id) => (dispatch) => {
 export const deleteItem = (id) => (dispatch, getState) => {
   const currentPage = getState().app.currentPage;
   const pageIndex = getState().app.pageIndex;
+  const tableItems = getState().app.items;
 
   if (currentPage.length === 1) {
     const index = pageIndex > 0 ? pageIndex - 1 : 0;
     dispatch(changePageIndex(index));
+  }
+
+  if (tableItems.length === 1) {
+    dispatch(setDataToLocalStorage([]));
   }
 
   dispatch({
